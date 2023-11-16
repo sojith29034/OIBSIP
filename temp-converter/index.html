@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1>Temperature Converter</h1>
+
+        <section class="converter">
+
+            <div class="input">
+                <h3>From</h3>
+                <select name="temp" id="in_temp">
+                    <option value="Degree Celsius" id="degCel">Degree Celsius</option>
+                    <option value="Degree Fahrenheit" id="degFah">Degree Fahrenheit</option>
+                    <option value="Kelvin" id="kelvin">Kelvin</option>
+                </select>
+                <input type="number" name="input" id="input" placeholder="Enter Temperature" required autofocus>
+            </div>
+
+            <i class="fas fa-long-arrow-alt-right arrow"></i>
+
+            <div class="output">
+                <h3>To</h3>
+                <select name="temp" id="out_temp">
+                    <option value="Degree Fahrenheit" id="degFah">Degree Fahrenheit</option>
+                    <option value="Kelvin" id="kelvin">Kelvin</option>
+                    <option value="Degree Celsius" id="degCel">Degree Celsius</option>
+                </select>
+                <h2 class="result" id="result"><span style="color: #727272;">Conversion</span></h2>
+            </div>
+
+        </section>
+
+        <button id="convert" type="submit">Convert</button>
+    </form>
+
+    <footer>
+        <hr>
+        | Made by <a href="https://github.com/sojith29034">Sojith Sunny</a> |
+    </footer>
+
+    <script src="js.js"></script>
+    <script src="https://kit.fontawesome.com/0a95f6b081.js" crossorigin="anonymous"></script>
+</body>
+</html>

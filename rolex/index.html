@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolex - Swiss Luxury Watches</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/0a95f6b081.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="nav">
+        <div class="logo">
+           <h1><a href="#"><img src="./logo.png" alt=""></a></h1>
+        </div>
+
+        <ul class="nav">
+           <li><a href="https://www.rolex.com/en-us/watches">Rolex Watches</a></li>
+           <li><a href="https://www.rolex.com/en-us/about-rolex">About Rolex</a></li>
+           <li><a href="https://www.rolex.com/en-us/store-locator">Store Locator</a></li>
+        </ul>
+
+        <label for="nav" class="icon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+        </label>
+    </nav>
+
+
+    <main>
+        <section class="main">
+            <div class="bg-circle"></div>
+    
+            <div class="content">
+                <div class="imagebox">
+                    <img src="rolex3.avif" class="imgs">
+                </div>
+    
+                <div class="intro">
+                    <h1>Rolex</h1>
+                    <p>Watches for the Elite</p>
+    
+                    <ul class="thumbs">
+                        <li><img src="rolex3.avif" onclick="imgSlider('rolex3.avif');circleColor('#A37E2C');imgsize('600px')"></li>
+                        <li><img src="rolex2.avif" onclick="imgSlider('rolex2.avif');circleColor('#969490');imgsize('600px')"></li>
+                        <li><img src="rolex1.avif" onclick="imgSlider('rolex1.avif');circleColor('#463231');imgsize('600px')"></li>
+                    </ul>
+    
+                    <button><a href="https://www.rolex.com/en-us">Learn More <i class="fas fa-arrow-right"></i></a></button>
+                </div>
+            </div>
+    
+            <div class="scroll">
+                <i class="fas fa-angle-double-down"></i><span>&nbsp;SCROLL</span>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="speciality">
+                <div class="text">
+                    <h3>Oyster case providing</h3>
+                    <h1>Unparalleled protection</h1><br>
+                    <p>A one-of-a-kind feature, which holds within it an intricate world of cogs and minutely crafted parts. 
+        Made of some of the most refined alloys, the Oyster case is incomparably resistant to all sorts of external aggressions.</p><br>
+                    <a href="https://www.rolex.com/en-us/watchmaking/features/case">Discover more ></a>
+                </div>
+                <img src="./f1.avif" alt="Oyster Case">
+            </div>
+
+            <div class="speciality">
+                <img src="./f2.avif" alt="Oyster Bracelet">
+                <div class="text">
+                    <h3>Oyster bracelet that</h3>
+                    <h1>Fits Perfectly</h1><br>
+                    <p>This is our Oyster bracelet, with its unique and exceedingly robust three-piece links. It is the mark of 
+        foundational values and alliances found in all our work. Those of function and form, rigour and fluidity, comfort and elegance.</p><br>
+                    <a href="https://www.rolex.com/en-us/watchmaking/features/bracelets">Discover more ></a>
+                </div>
+            </div>
+
+            <div class="speciality">
+                <div class="text">
+                    <h3>Perpetual motor</h3>
+                    <h1>Always neutralizing shocks</h1><br>
+                    <p>One which we designed and manufactured solely ourselves. Its specific purpose is to neutralize any and all 
+                        effects brought about by the knocks and bumps of everyday life.</p><br>
+                    <a href="https://www.rolex.com/en-us/watchmaking/features/movement">Discover more ></a>
+                </div>
+                <img src="./f3.avif" alt="Oyster Case">
+            </div>
+
+            <div class="overall">
+                <h3>Rolex Watches</h3>
+                <h1>Brilliant like no other</h1><br>
+                <p>An unrivalled reputation for quality and expertise</p><br>
+                <a href="https://www.rolex.com/en-us/">Discover more ></a>
+            </div>
+        </section>
+
+        <h1>What do you prefer?</h1>
+        <section class="watches">
+            <input type="radio" name="tabs" id="classic" checked>
+            <label for="classic">classic</label>
+            <div class="container">
+                <div class="show">
+                    <div class="text">
+                        <h1>1908</h1>
+                        <p>39 mm, 18 kt yellow gold, polished finish</p>
+                        <a href="https://www.rolex.com/en-us/watches/1908/m52508-0006">Know More <i class="fas fa-arrow-right"></i> </a>
+                    </div>
+                    <img src="./rolex1.avif" alt="1908">
+                </div>
+                <div class="show">
+                    <div class="text">
+                        <h1>Sky-Dweller</h1>
+                        <p>Oyster, 42 mm, white gold</p>
+                        <a href="https://www.rolex.com/en-us/watches/sky-dweller/m336239-0002">Know More <i class="fas fa-arrow-right"></i> </a>
+                    </div>
+                    <img src="./rolex4.avif" alt="Sky-Dweller">
+                </div>
+            </div>
+            
+
+            <input type="radio" name="tabs" id="professional">
+            <label for="professional">professional</label>
+            <div class="container">
+                <div class="show">
+                    <div class="text">
+                        <h1>Cosmograph Daytona</h1>
+                        <p>Oyster, 40 mm, platinum</p>
+                        <a href="https://www.rolex.com/en-us/watches/cosmograph-daytona/m126506-0001">Know More <i class="fas fa-arrow-right"></i> </a>
+                    </div>
+                    <img src="./rolex2.avif" alt="1908">
+                </div>
+                <div class="show">
+                    <div class="text">
+                        <h1>Yacht-Master 42</h1>
+                        <p>Oyster, 42 mm, RLX titanium</p>
+                        <a href="https://www.rolex.com/en-us/watches/yacht-master/m226627-0001">Know More <i class="fas fa-arrow-right"></i> </a>
+                    </div>
+                    <img src="./rolex5.avif" alt="Sky-Dweller">
+                </div>
+            </div>
+    
+            <input type="radio" name="tabs" id="latedt">
+            <label for="latedt">Latest Edition</label>
+            <div class="container">
+                <div class="show">
+                    <div class="text">
+                        <h1>Sky-Dweller</h1>
+                        <p>Oyster, 42 mm, white gold</p>
+                        <a href="https://www.rolex.com/en-us/watches/sky-dweller/m336239-0002">Know More <i class="fas fa-arrow-right"></i> </a>
+                    </div>
+                    <img src="./rolex4.avif" alt="Sky-Dweller">
+                </div>
+                <div class="show">
+                    <div class="text">
+                        <h1>Cosmograph Daytona</h1>
+                        <p>Oyster, 40 mm, yellow gold</p>
+                        <a href="https://www.rolex.com/en-us/watches/cosmograph-daytona/m126508-0001">Know More <i class="fas fa-arrow-right"></i> </a>
+                    </div>
+                    <img src="./rolex3.avif" alt="Sky-Dweller">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <i class="far fa-copyright"></i> <a href="https://www.rolex.com/en-us">Rolex.com</a> | Made by <a href="https://github.com/sojith29034">Sojith Sunny</a> |
+    </footer>
+</body>
+
+
+<script>
+    function imgSlider(anything){
+        document.querySelector('.imgs').src = anything;
+    }
+
+    function circleColor(color){
+        const bgCircle = document.querySelector('.bg-circle');
+        bgCircle.style.background = color;
+    }
+
+    function imgsize(value){
+        const imgheight= document.querySelector('.imgs');
+        imgheight.style.height = value;
+    }
+</script>
+
+</html>
