@@ -36,6 +36,7 @@ form{
 form h1{
     margin: 0 0 10px 0;
     color: var(--text);
+    text-align: center;
 }
 .converter{
     height: 100%;
@@ -58,13 +59,9 @@ form h1{
     width: 100%;
 }
 i.arrow{
-    font-size: 24px;
+    font-size: 32px;
     position: absolute;
     top: 50%;
-}
-h3{
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
 }
 select{
     padding: 10px;
@@ -142,4 +139,24 @@ footer a{
 }
 footer a:hover{
     color: #bebebe;
+}
+
+@media (max-width: 924px){
+    body{
+        padding: auto;
+    }
+    form{
+        margin: 50px;
+        height: 100%;
+        width: auto;
+    }
+    .converter{
+        flex-direction: column;
+    }
+    .converter .input, .converter .output{
+        width: 70%;
+    }
+    i.arrow{
+        transform: rotate(90deg);
+    }
 }

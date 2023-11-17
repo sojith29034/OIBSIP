@@ -28,6 +28,9 @@ a:hover{
     background-color: #000;
     color: #ffffff;
 }
+a i span{
+    font-family: var(--ter_text);
+}
 .profile{
     width: 100%;
     padding: 20px 40px;
@@ -125,4 +128,42 @@ a:hover{
 }
 .tasks .project a{
     margin-right: 25px;
+}
+
+
+
+@media (max-width: 924px){
+    body{
+        margin: 20px;
+    }
+    h1{
+        font-size: 24px !important;
+    }
+    .profile{
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .profile .content a{
+        margin: auto;
+    }
+    .profile .img{
+        margin: 20px auto;
+    }
+    .profile .info{
+        text-align: center;
+    }
+    .profile .info p{
+        margin: 10px auto;
+        font-size: 16px;
+    }
+    .profile .info a{
+        margin: auto;
+        margin-right: 10px;
+    }
+    .tasks{
+        flex-direction: column;
+        overflow-wrap: normal;
+    }
 }

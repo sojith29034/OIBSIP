@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oxygen+Mono&family=Poppins:wght@300&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Red+Hat+Display:wght@600&family=Titillium+Web:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -21,8 +21,16 @@
     --sec_text_color: rgb(0, 4, 255);
 
 
-    /* dark mode color palette */
-    @media (prefers-color-scheme: dark){
+    /* font family */
+    --nav_text_family: 'Source Code Pro', monospace;
+    --pri_text_family: 'Chakra Petch', sans-serif;
+    --sec_text_family: 'Red Hat Display', sans-serif;
+    --ter_text_family: 'Titillium Web', sans-serif;
+}
+
+/* dark mode color palette */
+@media (prefers-color-scheme: dark){
+    :root{
         --bg_color: rgb(54, 54, 54);
         --sec_bgcolor: rgb(40, 40, 40);
         --border_color: rgba(100, 100, 100, 0.85);
@@ -30,10 +38,6 @@
         --pri_text_color: rgb(252, 252, 225);
         --sec_text_color: rgb(59, 255, 245);
     }
-
-
-    /* font family */
-    --pri_text_family:  'Source Code Pro', monospace;
 }
 
 body{
@@ -94,7 +98,7 @@ nav ul li.logo img{
 nav ul li a{
     color: var(--pri_text_color);
     font-size: 22px;
-    font-family: var(--pri_text_family);
+    font-family: var(--nav_text_family);
     transition: .2s ease-in-out;
 }
 nav ul li a:hover{
@@ -198,17 +202,17 @@ input{
 }
 h1.hello{
     font-size: 36px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--sec_text_family);
     text-shadow: 2px -2px 3px #fff, -1px 2px 3px #000;
 }
 h1.name{
     font-size: 80px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--sec_text_family);
     text-shadow: 3px -3px 4px #fff, -2px 2px 4px #000;
 }
 /* h1.name span:hover{
-    text-shadow: -3px 3px 7px #fff, 5px -3px 4px #000;
-    transition: ease-in-out .5s;
+    text-shadow: -0px 0px 3px #fff, 1px -1px 3px #000;
+    transition: .5s;
 } */
 h1.greetings{
     font-size: 36px;
@@ -219,7 +223,7 @@ h1.info{
     font-size: 24px;
     text-shadow: none;
     color: var(--sec_text_color);
-    font-family: var(--pri_text_family);
+    font-family: var(--nav_text_family);
 }
 
 @media (prefers-color-scheme: dark){
@@ -358,7 +362,7 @@ h1.info{
     line-height: 50px;
     padding: 10px;
     color: var(--pri_text_color);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--pri_text_family);
     font-weight: 500;
     letter-spacing: 4px;
 }
