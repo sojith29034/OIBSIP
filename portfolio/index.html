@@ -23,9 +23,9 @@
             
             <ul>
                 <!-- <li id="buttons"></li> -->
-                <li class="logo">
+                <!-- <li class="logo"> -->
                     <!-- <div class="nav-items"><img src="./my pic.jpg" alt="My Photo"></div> -->
-                </li>
+                <!-- </li> -->
                 <li>
                     <input type="radio" name="sidebar" id="con0">
                     <label for="con0">
@@ -50,7 +50,7 @@
                 <li>
                     <input type="radio" name="sidebar" id="con3">
                     <label for="con3">
-                        <div class="nav-items"><a href="">Contact</a></div>
+                        <div class="nav-items"><a href="#sec4">Contact</a></div>
                     </label>
                 </li>
 
@@ -125,7 +125,51 @@
 
         <div id="sec4">
             <div class="contact">
-
+                <div class="title">
+                    <h1>Contact Me</h1>
+                    <hr>
+                </div>
+             
+                <div class="container">
+                    <div class="info">
+                        <img src="../common/my.jpg" alt="Profile Picture">
+                        <ul class="details">
+                            <li><i class="fas fa-map-marker-alt"></i> <span><a target="_blank" href="https://www.google.com/maps/place/Pune,+Maharashtra/@18.5248904,73.7228787,11z/data=!3m1!4b1!4m5!3m4!1s0x3bc2bf2e67461101:0x828d43bf9d9ee343!8m2!3d18.5204303!4d73.8567437">
+                            Pune, Maharashtra</a></span></li>
+                            <!-- <li><i class="far fa-envelope"></i><span><a href="">@gmail.com</a></span></li> -->
+                        </ul>
+                        <div class="socials">
+                            <a href="https://github.com/sojith29034" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/sojithsunny1/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:sojithsunny29034@gmail.com" target="_blank"><i class="fas fa-at"></i></a>   
+                        </div>
+                    </div>
+       
+                    <div class="form">
+                        <h2>Send a Message</h2>
+       
+                        <form name="contact" method="POST" netlify>
+                            <div class="inputbox">
+                                <input type="text" required name="Name" placeholder="Name">
+                                <span>Name</span>
+                            </div>
+       
+                            <div class="inputbox">
+                                <input type="email" required name="E-mail" placeholder="E-mail Address">
+                                <span>E-mail Address</span>
+                            </div>
+        
+                            <div class="inputbox">
+                                <textarea required></textarea>
+                                <span>Message...</span>
+                            </div>
+        
+                            <div class="inputbox submit">
+                                <input type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
