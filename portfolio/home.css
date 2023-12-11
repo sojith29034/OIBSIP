@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Red+Hat+Display:wght@600&family=Titillium+Web:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Pixelify+Sans&display=swap');
 
 *{
     margin: 0;
@@ -26,6 +27,9 @@
     --pri_text_family: 'Chakra Petch', sans-serif;
     --sec_text_family: 'Red Hat Display', sans-serif;
     --ter_text_family: 'Titillium Web', sans-serif;
+
+    --pri_pixel: 'Pixelify Sans', sans-serif;
+    --sec_pixel: 'Handjet', sans-serif;
 }
 
 /* dark mode color palette */
@@ -47,6 +51,66 @@ body{
 
 a{
     text-decoration: none;
+}
+
+
+.title h1{
+    height: 70px;
+    line-height: 50px;
+    padding: 10px;
+    color: var(--pri_text_color);
+    font-family: var(--pri_text_family);
+    font-weight: 500;
+    letter-spacing: 4px;
+    position: relative;
+    text-shadow: 2px 2px 1px red, -2px -2px 2px blue, -3px -3px 1px green;
+    animation: glitch .75s infinite;
+}
+.title h1 span{
+    position: absolute;
+    padding: 0 10px;
+    left: 0;
+    text-shadow: 2px 2px 1px red, -2px -2px 2px blue, -3px -3px 1px green;
+}
+.title h1 span:first-child{
+    left: 1px;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
+    animation: glitch .5s infinite alternate, move .5s infinite;
+}
+.title h1 span:last-child{
+    left: -1px;
+    z-index: 1;
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+    animation: glitch 1s infinite reverse, move .5s reverse infinite;
+}
+@keyframes move{
+    from{
+        left: 0;
+    }
+    to{
+        left: 1px;
+    }
+}
+@keyframes glitch{
+    0%{
+        text-shadow: 3px 3px 1px green, -1px -1px 1px red, -3px -3px 1px blue;
+    }
+    24%{
+        text-shadow: 2px 2px 1px green, -2px -2px 2px red, -3px -3px 1px blue;
+    }
+    25%{
+        text-shadow: 2px 2px 1px blue, -2px -2px 2px green, -3px -3px 1px red;
+    }
+    84%{
+        text-shadow: 2px 2px 1px blue, -2px -2px 2px green, -3px -3px 1px red;
+    }
+    85%{
+        text-shadow: 2px 2px 1px red, -2px -2px 2px blue, -3px -3px 1px red;
+    }
+    100%{
+        text-shadow: 2px 2px 1px green, -2px -2px 2px red, -3px -3px 1px blue;
+    }
 }
 
 /* -------------- Navigation -------------- */
@@ -201,23 +265,22 @@ input[type="radio"]{
     user-select: none;
 }
 .home h1.hello{
-    font-size: 36px;
-    font-family: var(--sec_text_family);
+    font-size: 32px;
+    font-family: var(--pri_pixel);
+    font-weight: 10;
+    letter-spacing: 2px;
     text-shadow: 2px -2px 3px #fff, -1px 2px 3px #000;
 }
 .home h1.name{
     font-size: 80px;
-    font-family: var(--sec_text_family);
+    letter-spacing: 5px;
+    font-family: var(--pri_pixel);
     text-shadow: 3px -3px 4px #fff, -2px 2px 4px #000;
 }
-/* h1.name span:hover{
-    text-shadow: -0px 0px 3px #fff, 1px -1px 3px #000;
-    transition: .5s;
-} */
-.home h1.greetings{
-    font-size: 36px;
-    font-family: 'Oxygen Mono', monospace;
-    text-shadow: 2px -2px 3px #fff, -1px 2px 3px #000;
+h1.name span:hover{
+    /* text-shadow: -0px 0px 3px #fff, 1px -1px 3px #000; */
+    transition: .5s ease-in-out;
+    cursor: 50px;
 }
 .home h1.info{
     font-size: 24px;
@@ -336,19 +399,6 @@ input[type="radio"]{
     margin: auto;
     /* border: 2px solid red; */
 }
-.about .title>h1{
-    height: 70px;
-    line-height: 50px;
-    padding: 10px;
-    color: var(--pri_text_color);
-    font-family: var(--pri_text_family);
-    font-weight: 500;
-    letter-spacing: 4px;
-    text-shadow: 1px -1px 3px #6b6b6b, -2px 2px 3px rgb(15, 15, 15);
-}
-/* --------X-------- About --------X-------- */
-
-
 
 
 /* ----------------- Projects ----------------- */
@@ -363,26 +413,13 @@ input[type="radio"]{
     }
 }
 .projects{
-    /* height: 90vh; */
     width: calc(100vw - 400px);
     margin: auto;
     border: 2px solid transparent;
-    /* border: 2px solid red; */
-}
-.projects .title>h1{
-    height: 70px;
-    line-height: 50px;
-    padding: 10px;
-    color: var(--pri_text_color);
-    font-family: var(--pri_text_family);
-    font-weight: 500;
-    letter-spacing: 4px;
-    text-shadow: 1px -1px 3px #6b6b6b, -2px 2px 3px rgb(15, 15, 15);
 }
 .projects .list{
     padding: 60px 30px;
     display: flex;
-    /* border: 2px solid red; */
 }
 .projects .list .project{
     position: relative;
@@ -511,16 +548,6 @@ input[type="radio"]{
     margin: auto;
     margin-bottom: 20px;
 }
-.contact .title>h1{
-    height: 70px;
-    line-height: 50px;
-    padding: 10px;
-    color: var(--pri_text_color);
-    font-family: var(--pri_text_family);
-    font-weight: 500;
-    letter-spacing: 4px;
-    text-shadow: 1px -1px 3px #6b6b6b, -2px 2px 3px rgb(15, 15, 15);
-}
 .container{
     position: relative;
     margin: 25px;
@@ -620,7 +647,7 @@ input[type="radio"]{
     letter-spacing: 3px;
 }
 .inputbox span{
-    font-family: var(--ter_text_family);
+    font-family: var(--pri_text_family);
     font-size: 18px;
     line-height: 1.8;
 }
@@ -637,7 +664,7 @@ input[type="radio"]{
     padding: 1px 0;
     font-size: 18px;
     color: var(--pri_text_color);
-    font-style: var(--sec_text_family);
+    font-family: var(--sec_text_family);
     border: none;
     outline: none;
     border-bottom: 1px solid var(--border_color);
@@ -651,7 +678,7 @@ input[type="radio"]{
 .container .form form .inputbox textarea{
     height: 120px;
     color: var(--pri_text_color);
-    font-style: var(--pri_text_family);
+    font-family: var(--pri_text_family);
 }
 .container .form form .inputbox span{
     position: absolute;
